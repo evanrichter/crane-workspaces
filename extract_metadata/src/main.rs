@@ -42,6 +42,7 @@ fn get_feature_sets() -> HashMap<(String, String), Vec<String>> {
         "{p}|{f}",
         "--prefix",
         "none",
+        "--workspace",
         "--target",
         "x86_64-unknown-linux-gnu",
     ]);
