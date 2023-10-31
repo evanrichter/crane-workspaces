@@ -65,7 +65,7 @@ let
 
       echo "Done!"
     '';
-  patchCargoToml = { name, replaceDeps ? true, replaceFeatures ? true, removeDevDeps ? true }:
+  patchCargoToml = { name, replaceDeps ? false, replaceFeatures ? true, removeDevDeps ? true }:
     let
       dep_all_crates_with_features = get_dependencies_for name rawMetadata;
       dep_all_features_with_crates = get_features_for name rawMetadata;
